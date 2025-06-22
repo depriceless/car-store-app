@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ <title>car dealer</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo"><a style="color: white; text-decoration: none;" href="{{ url_for('home') }}">Car Store</a></div>
+        <div class="nav-links">
+          <a href="{{ url_for('home') }}">Home</a>
+          <a href="{{ url_for('about') }}">About</a>
+          <a href="{{ url_for('contact') }}">Contact</a>
+          <a href="{{ url_for('signup') }}">Signup</a>
+          <a href="{{ url_for('login') }}">Login</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to Car Store<br>Your Trusted Car Dealer</h1>
+  </div>
+
+  
+
+  <!-- Car Categories Section -->
+<section class="container">
+  <h2 style="margin-bottom: 20px;">Our Car Categories</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+
+    <!-- Toyota -->
+    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+      <img src="static/images/camry.jpeg" alt="Toyota" style="width: 100%; border-radius: 10px;">
+      <h3 style="margin-top: 10px;">Toyota Camry</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>🚗 Engine: 2.5L I4</li>
+        <li>🔋 Fuel: Petrol</li>
+        <li>⚙️ Transmission: Automatic</li>
+        <li>🛞 Drive: Front-Wheel Drive</li>
+      </ul>
+    </div>
+
+    <!-- Benz -->
+    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+      <img src="static/images/mecedes.jpeg" alt="Mercedes-Benz" style="width: 100%; border-radius: 10px;">
+      <h3 style="margin-top: 10px;">Mercedes-Benz C300</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>🚗 Engine: 2.0L Turbo</li>
+        <li>🔋 Fuel: Petrol</li>
+        <li>⚙️ Transmission: 9-Speed Auto</li>
+        <li>🛞 Drive: Rear-Wheel Drive</li>
+      </ul>
+    </div>
+
+    <!-- Nissan -->
+    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+      <img src="static/images/nissan.jpeg" alt="Nissan Altima" style="width: 100%; border-radius: 10px;">
+      <h3 style="margin-top: 10px;">Nissan Altima</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>🚗 Engine: 2.5L I4</li>
+        <li>🔋 Fuel: Petrol</li>
+        <li>⚙️ Transmission: CVT</li>
+        <li>🛞 Drive: All-Wheel Drive</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section class="container">
+    <h2>Contact</h2>
+    <p>Email: support@carstore.com</p>
+    <p>Phone: 08141900468</p>
+  </section>
+  <!-- About Section -->
+  
+  <section class="container">
+    <h2>About Us</h2>
+    <p>Car Store is your one-stop destination for buying and selling quality cars. We provide a smooth and transparent experience with verified listings and trusted sellers.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Car Store. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

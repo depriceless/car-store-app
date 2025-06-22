@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Car Store</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">Car Store</div>
+      <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('signup') }}">Signup</a>
+        <a href="{{ url_for('login') }}"">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h1>Contact Us</h1>
+    <p>Email: support@carstore.com</p>
+    <p>Phone: +123 456 7890</p>
+    <p>Location: Lagos, Nigeria</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Car Store</p>
+  </footer>
+</body>
+</html>
