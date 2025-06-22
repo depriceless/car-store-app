@@ -1,7 +1,12 @@
-from flask import Flask, request, redirect, render_template,psycopg2,os
-import sqlite3
-from werkzeug.security import generate_password_hash, check_password_hash
+from flask import Flask, request, redirect, render_template
+import psycopg2
+import os
 from urllib.parse import urlparse
+from werkzeug.security import generate_password_hash, check_password_hash
+
+
+
+
 
 # Read database URL from environment variable (set by Render)
 DATABASE_URL = os.environ.get("DATABASE_URL")
